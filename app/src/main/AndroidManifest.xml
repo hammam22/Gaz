@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gazz">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/gazmini"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myparse">
+        <activity android:name=".act_sellers_list"></activity>
+        <activity android:name=".act_infos_for_cli" />
+        <activity android:name=".act_selSubsManager" />
+        <activity android:name=".act_activity_manager" />
+        <activity android:name=".act_activity_details" />
+        <activity android:name=".act_gaz_details" />
+        <activity android:name=".act_make_gaz_activity" />
+        <activity android:name=".act_add_gaz" />
+        <activity android:name=".act_gaz" />
+        <activity android:name=".act_myMemberShip" />
+        <activity android:name=".act_people_details" />
+        <activity android:name=".act_sellers_manager" />
+        <activity android:name=".Read" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".myMain" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".act_Sel" />
+        <activity android:name=".act_Cli" />
+        <activity android:name=".act_Nei" />
+        <activity android:name=".act_Edit_Profile" />
+        <activity android:name=".act_set_nei_code" />
+        <activity android:name=".act_request_for_nei" />
+        <activity android:name=".act_Request_manager" />
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="20dp"
+    tools:context=".myMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/gazbig"
+        app:layout_constraintBottom_toTopOf="@+id/EdLoginUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/EdLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ed_back"
+        android:gravity="end"
+        android:hint="إسم المستخدم"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/EdLoginPass"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".83"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/EdLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@drawable/ed_back"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:hint="كلمة المرور"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
+        android:singleLine="true"
+        android:password="true"
+        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".9"/>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="دخول"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".8"/>
+
+    <TextView
+        android:id="@+id/tvToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سجّل حساباً جديداً !!"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

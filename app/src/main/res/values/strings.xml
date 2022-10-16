@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">الغاز</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com</string>
+    <string name="back4app_app_id">CM1PqzI8OQ6QLd7pY1KWLZjmo6Zl3ANIuXmZa00v</string>
+    <string name="back4app_client_key">5W35IfzmLnbk2QSogw7Ih3LPIOvQ7iCFLUVAw8uf</string>
+
+</resources>
